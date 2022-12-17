@@ -1,0 +1,231 @@
+2022-12-15 11:44:50,941 [INFO] com.fashion.gtest.OnlineFashionHouseApplication [restartedMain] Starting OnlineFashionHouseApplication using Java 15.0.2 on DESKTOP-QQL779O with PID 1012 (C:\Users\dell\Desktop\Online Fashion House\OnlineFashionHouse\bin\main started by dell in C:\Users\dell\Desktop\Online Fashion House\OnlineFashionHouse)
+2022-12-15 11:44:50,959 [INFO] com.fashion.gtest.OnlineFashionHouseApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-12-15 11:44:51,176 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-15 11:44:51,178 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-15 11:44:53,485 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-15 11:44:53,631 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 120 ms. Found 2 JPA repository interfaces.
+2022-12-15 11:44:55,197 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-15 11:44:55,220 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2022-12-15 11:44:55,221 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-15 11:44:55,430 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-15 11:44:55,431 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4252 ms
+2022-12-15 11:44:55,581 [WARN] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.h2.Driver
+2022-12-15 11:44:55,607 [INFO] org.apache.catalina.core.StandardService [restartedMain] Stopping service [Tomcat]
+2022-12-15 11:44:55,649 [INFO] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-15 11:44:55,709 [ERROR] org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.h2.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.fashion.gtest.OnlineFashionHouseApplication.main(OnlineFashionHouseApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.h2.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 26 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.h2.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 40 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: org.h2.Driver
+	at org.springframework.util.Assert.state(Assert.java:97)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:171)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:123)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 41 common frames omitted
+2022-12-15 11:46:31,720 [INFO] com.fashion.gtest.OnlineFashionHouseApplication [restartedMain] Starting OnlineFashionHouseApplication using Java 15.0.2 on DESKTOP-QQL779O with PID 3304 (C:\Users\dell\Desktop\Online Fashion House\OnlineFashionHouse\bin\main started by dell in C:\Users\dell\Desktop\Online Fashion House\OnlineFashionHouse)
+2022-12-15 11:46:31,721 [INFO] com.fashion.gtest.OnlineFashionHouseApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-12-15 11:46:31,879 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-15 11:46:31,880 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-15 11:46:33,927 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-15 11:46:34,101 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 148 ms. Found 2 JPA repository interfaces.
+2022-12-15 11:46:35,778 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-15 11:46:35,800 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2022-12-15 11:46:35,801 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-15 11:46:35,988 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-15 11:46:35,989 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4106 ms
+2022-12-15 11:46:36,051 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-12-15 11:46:36,420 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-12-15 11:46:36,448 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:fashiondb'
+2022-12-15 11:46:36,742 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-15 11:46:36,865 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-15 11:46:37,247 [INFO] org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-15 11:46:37,527 [INFO] org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-12-15 11:46:38,789 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-15 11:46:38,804 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-15 11:46:39,872 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-15 11:46:40,628 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-15 11:46:40,730 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-15 11:46:40,758 [INFO] com.fashion.gtest.OnlineFashionHouseApplication [restartedMain] Started OnlineFashionHouseApplication in 9.809 seconds (JVM running for 11.229)
+2022-12-15 11:46:49,274 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8000-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 11:46:49,275 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8000-exec-3] Initializing Servlet 'dispatcherServlet'
+2022-12-15 11:46:49,278 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8000-exec-3] Completed initialization in 2 ms
+2022-12-15 11:47:11,690 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8000-exec-4] Request method 'GET' not supported
+2022-12-15 11:47:11,697 [WARN] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8000-exec-4] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-12-15 11:47:15,104 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8000-exec-2] Request method 'GET' not supported
+2022-12-15 11:47:15,116 [WARN] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8000-exec-2] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-12-15 11:48:00,280 [WARN] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8000-exec-6] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "DeletedId=2Data"]
+2022-12-15 11:50:11,806 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8000-exec-6] Request method 'GET' not supported
+2022-12-15 11:50:11,812 [WARN] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8000-exec-6] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-12-15 11:50:15,011 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8000-exec-7] Request method 'GET' not supported
+2022-12-15 11:50:15,017 [WARN] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8000-exec-7] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-12-15 11:53:05,876 [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-15 11:53:05,900 [INFO] org.apache.catalina.core.StandardService [Thread-6] Stopping service [Tomcat]
+2022-12-15 11:53:05,902 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-6] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-15 11:53:05,914 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-6] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-15 11:53:06,132 [WARN] org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-6] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2022-12-15 11:53:06,133 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown initiated...
+2022-12-15 11:53:06,142 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown completed.
+2022-12-15 11:53:06,364 [INFO] com.fashion.gtest.OnlineFashionHouseApplication [restartedMain] Starting OnlineFashionHouseApplication using Java 15.0.2 on DESKTOP-QQL779O with PID 3304 (C:\Users\dell\Desktop\Online Fashion House\OnlineFashionHouse\bin\main started by dell in C:\Users\dell\Desktop\Online Fashion House\OnlineFashionHouse)
+2022-12-15 11:53:06,366 [INFO] com.fashion.gtest.OnlineFashionHouseApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-12-15 11:53:06,852 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-15 11:53:06,908 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2022-12-15 11:53:07,170 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-15 11:53:07,172 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2022-12-15 11:53:07,173 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-15 11:53:07,221 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-15 11:53:07,221 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 847 ms
+2022-12-15 11:53:07,260 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2022-12-15 11:53:07,267 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2022-12-15 11:53:07,267 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:fashiondb'
+2022-12-15 11:53:07,331 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-15 11:53:07,351 [INFO] org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-12-15 11:53:07,510 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-15 11:53:07,511 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-15 11:53:07,747 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-15 11:53:07,960 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-15 11:53:07,977 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-15 11:53:07,987 [INFO] com.fashion.gtest.OnlineFashionHouseApplication [restartedMain] Started OnlineFashionHouseApplication in 1.733 seconds (JVM running for 398.458)
+2022-12-15 11:53:07,990 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-12-15 11:53:24,447 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 11:53:24,459 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8000-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-12-15 11:53:24,463 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8000-exec-1] Completed initialization in 1 ms
+2022-12-15 11:54:31,415 [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-15 11:54:31,430 [INFO] org.apache.catalina.core.StandardService [Thread-8] Stopping service [Tomcat]
+2022-12-15 11:54:31,431 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-8] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-15 11:54:31,438 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-8] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-15 11:54:31,649 [WARN] org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-8] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2022-12-15 11:54:31,658 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-8] HikariPool-2 - Shutdown initiated...
+2022-12-15 11:54:31,660 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-8] HikariPool-2 - Shutdown completed.
+2022-12-15 11:54:32,091 [INFO] com.fashion.gtest.OnlineFashionHouseApplication [restartedMain] Starting OnlineFashionHouseApplication using Java 15.0.2 on DESKTOP-QQL779O with PID 3304 (C:\Users\dell\Desktop\Online Fashion House\OnlineFashionHouse\bin\main started by dell in C:\Users\dell\Desktop\Online Fashion House\OnlineFashionHouse)
+2022-12-15 11:54:32,092 [INFO] com.fashion.gtest.OnlineFashionHouseApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-12-15 11:54:32,710 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-15 11:54:32,736 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2022-12-15 11:54:32,945 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-15 11:54:32,947 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2022-12-15 11:54:32,948 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-15 11:54:32,981 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-15 11:54:32,981 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 875 ms
+2022-12-15 11:54:33,011 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2022-12-15 11:54:33,024 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2022-12-15 11:54:33,024 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:fashiondb'
+2022-12-15 11:54:33,093 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-15 11:54:33,109 [INFO] org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-12-15 11:54:33,258 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-15 11:54:33,258 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-15 11:54:33,488 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-15 11:54:33,674 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-15 11:54:33,699 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-15 11:54:33,702 [INFO] com.fashion.gtest.OnlineFashionHouseApplication [restartedMain] Started OnlineFashionHouseApplication in 1.841 seconds (JVM running for 484.173)
+2022-12-15 11:54:33,705 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-12-15 11:55:27,867 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8000-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 11:55:27,868 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8000-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-12-15 11:55:27,869 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8000-exec-2] Completed initialization in 1 ms
+2022-12-15 11:57:56,642 [WARN] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8000-exec-3] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "DeletedId=6Data"]
+2022-12-15 12:01:20,147 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8000-exec-10] Request method 'GET' not supported
+2022-12-15 12:01:20,150 [WARN] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8000-exec-10] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-12-15 12:01:25,075 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8000-exec-1] Request method 'GET' not supported
+2022-12-15 12:01:25,078 [WARN] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8000-exec-1] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-12-15 12:01:28,657 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8000-exec-2] Request method 'GET' not supported
+2022-12-15 12:01:28,659 [WARN] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8000-exec-2] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-12-15 12:02:34,389 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8000-exec-5] Request method 'GET' not supported
+2022-12-15 12:02:34,390 [WARN] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8000-exec-5] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-12-15 12:02:36,169 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8000-exec-7] Request method 'GET' not supported
+2022-12-15 12:02:36,171 [WARN] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8000-exec-7] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-12-15 12:02:37,409 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8000-exec-8] Request method 'GET' not supported
+2022-12-15 12:02:37,410 [WARN] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8000-exec-8] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-12-15 12:02:38,501 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8000-exec-9] Request method 'GET' not supported
+2022-12-15 12:02:38,502 [WARN] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8000-exec-9] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-12-15 12:02:39,408 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8000-exec-10] Request method 'GET' not supported
+2022-12-15 12:02:39,412 [WARN] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8000-exec-10] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-12-15 12:02:40,383 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8000-exec-1] Request method 'GET' not supported
+2022-12-15 12:02:40,385 [WARN] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8000-exec-1] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-12-15 12:02:41,244 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8000-exec-2] Request method 'GET' not supported
+2022-12-15 12:02:41,248 [WARN] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8000-exec-2] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-12-15 13:13:51,984 [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-15 13:13:52,037 [INFO] org.apache.catalina.core.StandardService [Thread-12] Stopping service [Tomcat]
+2022-12-15 13:13:52,041 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-12] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-15 13:13:52,117 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-12] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-15 13:13:52,368 [WARN] org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-12] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2022-12-15 13:13:52,369 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-12] HikariPool-3 - Shutdown initiated...
+2022-12-15 13:13:52,371 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-12] HikariPool-3 - Shutdown completed.
+2022-12-15 13:13:52,699 [INFO] com.fashion.gtest.OnlineFashionHouseApplication [restartedMain] Starting OnlineFashionHouseApplication using Java 15.0.2 on DESKTOP-QQL779O with PID 3304 (C:\Users\dell\Desktop\Online Fashion House\OnlineFashionHouse\bin\main started by dell in C:\Users\dell\Desktop\Online Fashion House\OnlineFashionHouse)
+2022-12-15 13:13:52,701 [INFO] com.fashion.gtest.OnlineFashionHouseApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-12-15 13:13:53,339 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-15 13:13:53,390 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 50 ms. Found 2 JPA repository interfaces.
+2022-12-15 13:13:53,764 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2022-12-15 13:13:53,765 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2022-12-15 13:13:53,766 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-15 13:13:53,816 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-15 13:13:53,816 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1107 ms
+2022-12-15 13:13:53,837 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2022-12-15 13:13:53,841 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2022-12-15 13:13:53,845 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:fashiondb'
+2022-12-15 13:13:53,904 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-15 13:13:53,920 [INFO] org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-12-15 13:13:54,134 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-15 13:13:54,135 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-15 13:13:54,420 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-15 13:13:54,646 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-15 13:13:54,657 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2022-12-15 13:13:54,666 [INFO] com.fashion.gtest.OnlineFashionHouseApplication [restartedMain] Started OnlineFashionHouseApplication in 2.096 seconds (JVM running for 5245.138)
+2022-12-15 13:13:54,668 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-12-15 15:03:35,883 [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-15 15:03:35,979 [INFO] org.apache.catalina.core.StandardService [Thread-16] Stopping service [Tomcat]
+2022-12-15 15:03:36,038 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-16] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-15 15:03:36,272 [WARN] org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-16] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2022-12-15 15:03:36,273 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-16] HikariPool-4 - Shutdown initiated...
+2022-12-15 15:03:36,278 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-16] HikariPool-4 - Shutdown completed.
